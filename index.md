@@ -1,5 +1,14 @@
 # Charlie Caravati #
 
+Currently studying Earth Data Analytics at the University of Colorado, Boulder.
+
+### Projects ###
+
+## First Interactive Map ##
+This is a map of the University of Virginia in Charlottesville, VA where I completed my undergrad studies.
+
+<embed type="text/html" src="uva.html" width="600" height="600">
+
 <img 
   src="/img/Fish Picture.png" 
   alt="Test image of me holding a fish" 
