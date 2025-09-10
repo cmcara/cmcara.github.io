@@ -1,4 +1,3 @@
-# Charlie Caravati #
 
 Currently studying Earth Data Analytics at the University of Colorado, Boulder.
 
