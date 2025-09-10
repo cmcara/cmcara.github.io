@@ -2,9 +2,9 @@
 
 Currently studying Earth Data Analytics at the University of Colorado, Boulder.
 
-### Projects ###
+## Projects ##
 
-## First Interactive Map ##
+### First Interactive Map ###
 This is a map of the University of Virginia in Charlottesville, VA where I completed my undergrad studies.
 
 <embed type="text/html" src="uva.html" width="600" height="600">
