@@ -3,7 +3,7 @@
 <img 
   src="/img/Fish Picture.png" 
   alt="Test image of me holding a fish" 
-  width="40%">
+  width="20%">
   
 ## About Me ##
 Hello! My name is Charlie, and I am currently a student in the Earth Data Analytics certificate program through CU Boulder's [Earth Lab](https://earthlab.colorado.edu/) and [ESIIL](https://esiil.org/). I am originally from Virginia and studied economics and math at UVA before moving to Nashville to begin a career in the live music industry. I worked for talent agents, promoters, managers, and accountants hoping to combine my love of numbers and live music without finding the right fit, but I continued to develop an affinity and enjoyment for the logical problem solving of analytics.  
