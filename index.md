@@ -1,6 +1,4 @@
 
-Currently studying Earth Data Analytics at the University of Colorado, Boulder.
-
 ## Projects ##
 
 ### First Interactive Map ###
@@ -17,9 +15,9 @@ Using daily data pulled from NOA and resampled on an annual basis, I ran an OLS 
 ----------
 
 ## About Me ##
-Hello! My name is Charlie, and I am currently a student in the Earth Data Analytics certificate program through CU Boulder's [Earth Lab](https://earthlab.colorado.edu/) and [ESIIL](https://esiil.org/). I am originally from Virginia and studied economics and math at UVA before moving to Nashville to begin a career in the live music industry. I worked for talent agents, promoters, managers, and accountants hoping to combine my love of numbers and live music without finding the right fit, but I continued to develop an affinity and enjoyment for the logical problem solving of analytics.  
+Hello! My name is Charlie, and I am currently a student in the Earth Data Analytics certificate program through CU Boulder's [Earth Lab](https://earthlab.colorado.edu/) and [ESIIL](https://esiil.org/). I am originally from Virginia and studied economics and math at the University of Virginia before moving to Nashville to begin a career in the live music industry. continuing to develop an affinity and enjoyment for the logical problem solving of analytics while I worked for talent agents, promoters, managers, and accountants without finding the right fit. 
   
-Looking outside of entertainment for the first time, I initially explored more traditional routes of operations or policy data analytics and MBA programs before stumbling upon earth science applications through *The Lost City of the Monkey God* by Douglas Preston. I recommend the entire book, but the author's off-handed reference to researchers "beating up on the data" from a laser flown over a jungle to generate a surface map showing "lost" cities below the canopy cover had me hooked. The more I looked into visualizations and modeling, the more math I found and interested I became. CU Boulder and The EDA program are a perfect place to formalize and improve my coding abilities in an open-source earth science environment, and I look forward to documenting my progress here and taking these skills into the Applied Math Master's program I plan to begin at Boulder in January 2026. 
+Looking outside of entertainment for the first time, I initially explored more traditional routes in operations or policy analytics and MBA programs before stumbling upon earth science applications through *The Lost City of the Monkey God* by Douglas Preston. The entire story is fascinating, but the author's off-handed reference to researchers "beating up on the data" taken from LiDAR flown over the jungle in order to generate a surface map showing ruins below the canopy had me hooked. The more I looked into visualizations and modeling in earth science, the more math I found and interested I became. I am fortunate to have spent a large portion of my life outdoors, and CU Boulder and The EDA program are the perfect places to formalize and improve my  abilities to contributed in an open-source earth science environment.
 
 <img 
   src="/img/Fish Picture.png" 
