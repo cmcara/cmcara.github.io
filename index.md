@@ -10,7 +10,7 @@ This is a map of the University of Virginia in Charlottesville, VA where I compl
 
 ### OLS Regression on Charlottesville Daily Max Temperature Data ###
 <embed type="text/html" src="img/cville_int_plot.html" width="600" height="600">
-![Cville Regression](img/cville_climate_reg_full.jpeg)
+![Regression](img/cville_climate_reg_full.jpeg)
   
 Using daily data pulled from NOA and resampled on an annual basis, I ran an OLS regression on temperature data in Charlottesville dating back to 1893. I found a minor positive correlation showing an increase of 0.00033993 degrees/year. This value lags behind most estimates of average annual temperature increase by multiple orders of magnitude ([Link](https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature)), but the more surprising result of this exercise was the variability I encountered when implementing different cut-offs for which years to include in the data. Given that some years in the data do not have a complete record for each day in that year, there is some bias in resampling each year by a mean value and considering all years' means equallly, but when I implemented different cutoffs to refine my results, I started seeing negative values contrary to expectations. Read More
 
