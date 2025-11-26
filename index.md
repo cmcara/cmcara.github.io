@@ -1,8 +1,8 @@
----
+## Charlie Caravati ##
+
+### Currently studying Earth Data Analytics at CU Boulder. Some of the projects I have worked on are listed below and linked for further detail. ###
 
 ---
-
-## Projects ##
 
 ### First Interactive Map ###
 This is a map generated in Python of the University of Virginia in Charlottesville, VA where I completed my undergrad studies.
