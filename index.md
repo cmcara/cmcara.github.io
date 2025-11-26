@@ -29,7 +29,7 @@ I have always been fascinated by watching ducks fly, and in central Virginia whe
 
 ### Analyzing Vegetation Levels in the Gila River Indian Community
 
-<div style="width: 1200px; height: 600px;">
+<div style="width: 1200px; height: 515px;">
   <iframe src="img/ndvi_diff_plot_new.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
