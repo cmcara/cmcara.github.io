@@ -1,4 +1,3 @@
-## Charlie Caravati ##
 
 ### Currently studying Earth Data Analytics at CU Boulder. Some of the projects I have worked on are listed below and linked for further detail. ###
 
