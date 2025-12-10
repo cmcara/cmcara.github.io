@@ -16,8 +16,19 @@ Using daily data pulled from NOA and resampled on an annual basis, I ran an OLS 
 
 ### Plotting Annual Migration for Ring-Necked Ducks
 
-<div style="width: 500px; height: 400px;overflow: hidden">
-  <iframe src="img/na_migration.html"style = "width: 1000px; height: 800px; border: none; transform: scale(0.5); transform-origin: top left">
+<div style="
+    width: 450px;
+    height: 350px;   
+    overflow: hidden; 
+">
+  <iframe src="img/na_migration.html"
+          style="
+            width: 900px;
+            height: 700px;
+            border: none;
+            transform: scale(0.5);
+            transform-origin: top left;
+          ">
   </iframe>
 </div>
 
