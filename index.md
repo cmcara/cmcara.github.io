@@ -16,9 +16,9 @@ Using daily data pulled from NOA and resampled on an annual basis, I ran an OLS 
 
 ### Plotting Annual Migration for Ring-Necked Ducks
 
-<div style="width: 850px; height: 750px; overflow: hidden;">
+<div style="width: 100%; max-width: 850px; height: auto; overflow: hidden;">
   <iframe src="img/na_migration.html" 
-          style="width:850px; height:750px; border:none; transform: scale(0.7); transform-origin: 0 0;">
+          style="width: 100%; height: 0; padding-bottom: 88.2%; border: none;">
   </iframe>
 </div>
 
@@ -46,7 +46,7 @@ In an effort to further understand the impact of the 2004 settlement restoring w
 
 For decades, both the GRIC and SRIC fought legal battles with the federal government as their rivers dried, but due to the smaller land size and relatively less far-reaching implications, the SRIC was able to reach a water rights [settlement](https://open.uapress.arizona.edu/read/dc19d40e-ae7d-4010-a72b-337de7467d64/section/fd79c1c1-d802-403e-a696-fc863e7b5fa1#id_224) in 1988, well before the 2004 settlement impacting the GRIC. For all of these reasons, we should see similar climate and annual trends between the GRIC and SRIC prior to the 2004 settlemt primarily affecting the GRIC. The data supports the prior trends assumption on an eye-test level, but in hindsight a longer lead time on both datasets could have been helpful.
 
-<div style="max-width: 50%; height: auto; text-align: center;">
+<div style="max-width: 65%; height: auto; text-align: center;">
   <img src="img/ndvi_parallel_trends.png" 
        alt="NDVI parallel trends" 
        style="max-width: 100%; height: auto; display: inline-block;">
