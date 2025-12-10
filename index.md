@@ -6,23 +6,23 @@
 ### First Interactive Map ###
 This is a map generated in Python of the University of Virginia in Charlottesville, VA where I completed my undergrad studies.
 
-<embed type="text/html" src="img/uva.html" width="600" height="450">
+<embed type="text/html" src="img/uva.html" width="600" height="500">
 
 ### OLS Regression on Charlottesville Daily Max Temperature Data ###
-<embed type="text/html" src="img/cville_int_plot (3).html" width="600" height="250"> 
+<embed type="text/html" src="img/cville_int_plot (3).html" width="600" height="300"> 
 ![Regression](img/cville_climate_reg_full (2).jpeg)
   
 Using daily data pulled from NOA and resampled on an annual basis, I ran an OLS regression on temperature data in Charlottesville dating back to 1893. I found a minor positive correlation showing an increase of 0.00033993 degrees/year. This value lags behind most estimates of average annual temperature increase by multiple orders of magnitude ([Link](https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature)), but the more surprising result of this exercise was the variability I encountered when implementing different cut-offs for which years to include in the data. Given that some years in the data do not have a complete record for each day in that year, there is some bias in resampling each year by a mean value and considering all years' means equallly, but when I implemented different cutoffs to refine my results, I started seeing negative values contrary to expectations. [Read more about the process here](projects/cville_regression_project.html)
 
 ### Plotting Annual Migration for Ring-Necked Ducks
 
-<div style="width: 1200px; height: 420px; overflow: hidden;">
+<div style="width: 1200px; height: 500px; overflow: hidden;">
   <iframe src="img/na_migration.html" 
-          style="width:1600px; height:600px; border:none; transform: scale(0.75); transform-origin: 0 0;">
+          style="width:1600px; height:600px; border:none; transform: scale(0.7); transform-origin: 0 0;">
   </iframe>
 </div>
 
-<div style="width: 1200px; height: 420px; overflow: hidden;">
+<div style="width: 1600px; height: 500px; overflow: hidden;">
   <iframe src="img/global_migration.html" 
           style="width:1600px; height:600px; border:none; transform: scale(0.5); transform-origin: 0 0;">
   </iframe>
@@ -44,7 +44,7 @@ In order to track improvements and changes within the GRIC post settlement, I se
 
 ### Looking Further into Gila River NDVI compared to neighboring Salt River Indian Community
 
-<div style="width: 1200px; height: 505px;">
+<div style="width: 500px; height: 505px;">
   <iframe src="img/overview_plot.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
@@ -52,8 +52,8 @@ In an effort to further understand the impact of the 2004 settlement restoring w
 
 For decades, both the GRIC and SRIC fought legal battles with the federal government as their rivers dried, but due to the smaller land size and relatively less far-reaching implications, the SRIC was able to reach a water rights [settlement](https://open.uapress.arizona.edu/read/dc19d40e-ae7d-4010-a72b-337de7467d64/section/fd79c1c1-d802-403e-a696-fc863e7b5fa1#id_224) in 1988, well before the 2004 settlement impacting the GRIC. For all of these reasons, we should see similar climate and annual trends between the GRIC and SRIC prior to the 2004 settlemt primarily affecting the GRIC. The data supports the prior trends assumption on an eye-test level, but in hindsight a longer lead time on both datasets could have been helpful.
 
-<div style="width: 1200px; height: 505px;">
-  <iframe src="img/ndvi_parallel_trends.png" style="width: 100%; height: 100%; border: none;"></iframe>
+<div style="width: 1000px; height: 505px;">
+  <iframe src="img/ndvi_parallel_trends.png" style="width: 25%; height: 25%; border: none;"></iframe>
 </div>
 
 Next I ran the DiD analysis, which should identify what, if any, effect the 2004 settlement might have had when annual trends and patterns present in both datasets are removed. Unfortunately, those annual trends, particularly in climate variability, have a large impact on vegetation growth annually and can overshadow any improvement due to water flow. Additionally increased development in the GRIC as downtown has grown would downwardly bias the mean values. The treated:post = .0085 which while positive is very weak on a 0-1 scale. I have not solved how to fully mask out human development and isolate as much 'pure' vegetation as possible, but I have expanded on the last project as a step in that direction. I modified the NDVI sliding plot to now calculate a running average of NDVI values from 2005 to the year selected as compared to mean values for 2002-2004. Calculating a running average helps smooth out the data more and really highlight areas where NDVI has been consistently changing in the same direction. The restoration of water right from the settlement has certainly led to [improvement](https://nativesciencereport.org/2021/12/bringing-a-river-back-to-life/#:~:text=At%20a%202015%20conference%20on,segment%20of%20the%20Gila%20River.) for the local communities, and overcoming challenges to quantify those benefits helps justify similar actions elsewhere. [Read more about the process and potential next steps here.](project/gric_sric_project.html)
