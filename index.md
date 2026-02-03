@@ -4,7 +4,7 @@
 ---
 ### Modeling Asthma Rates in Chicago with Income and Vegetation Data
 
-<div style="width: 1200px; height: 505px;">
+<div style="width: 1200px; height: 700px;">
   <iframe src="img/descrip_asthma_error_map.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
