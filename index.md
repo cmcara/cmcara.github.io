@@ -2,6 +2,14 @@
 ### Welcome! I am currently working towards my MS in Applied Mathematics at the University of Colorado Boulder, with a focus on statistics and data analytics applications to the physical sciences. Some of the projects I have worked on in Earth Data Analytics are listed below with workflows linked for further detail. ###
 
 ---
+### K-Means Optimization in Land Cover Classification
+
+<div style="width: 1000px; height: 750px;">
+  <iframe src="img/elbow_output.html" style="width: 100%; height: 100%; border: none;"></iframe>
+</div>
+
+I created a workflow to implement the elbow method into k-means modeling. [Read more about the process here](projects/clustering_portfolio.html).
+
 ### Modeling Asthma Rates in Chicago with Income and Vegetation Data
 
 <div style="width: 1000px; height: 750px;">
