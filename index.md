@@ -8,15 +8,15 @@
   <iframe src="img/elbow_output_080902030501.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
-<div style="width: 1000px; height: 500px;">
+<div style="width: 1300px; height: 500px;">
   <iframe src="img/kmeans_output_080902030501.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
-<div style="width: 500px; height: 400px;">
+<div style="width: 500px; height: 300px;">
   <iframe src="img/elbow_output_080902030502.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
-<div style="width: 1200px; height: 600px;">
+<div style="width: 1300px; height: 550px;">
   <iframe src="img/kmeans_output_080902030502.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
