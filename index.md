@@ -5,10 +5,28 @@
 ### K-Means Optimization in Land Cover Classification
 
 <div style="width: 1000px; height: 750px;">
-  <iframe src="img/elbow_output.html" style="width: 100%; height: 100%; border: none;"></iframe>
+  <iframe src="img/elbow_output_080902030501.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
-I created a workflow to implement the elbow method into k-means modeling. [Read more about the process here](projects/clustering_portfolio.html).
+<div style="width: 1000px; height: 750px;">
+  <iframe src="img/kmeans_output_080902030501.html" style="width: 100%; height: 100%; border: none;"></iframe>
+</div>
+
+<div style="width: 1000px; height: 750px;">
+  <iframe src="img/elbow_output_080902030502.html" style="width: 100%; height: 100%; border: none;"></iframe>
+</div>
+
+<div style="width: 1000px; height: 750px;">
+  <iframe src="img/kmeans_output_080902030502.html" style="width: 100%; height: 100%; border: none;"></iframe>
+</div>
+
+Unsupervised machine learning algorithms have a numer of [use](https://www.sciencedirect.com/science/article/pii/S1877050925012852) [cases](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018EA000519) in earth sciences, though the lack of labelled training data can make inference more difficult. [K-means clustering](https://en.wikipedia.org/wiki/K-means_clustering) applies an algorithm to group data into k different 'clusters' of similar values, but without some testing, the optimal number of clusters can be difficult to determine. The elbow method compares the inetrtia (defined as the sum of squared differences) for each k clusters, but inertia will always decrease with more clusters. By locating the 'elbow' where we start seeing a smaller decrease in inertia as we increase cluters, we can identify the k number of clusters that offers the best tradeoff.
+
+<div style="width: 5000px; height: 500px;">
+  <iframe src="img/HUC12_borders.html" style="width: 100%; height: 100%; border: none;"></iframe>
+</div>
+
+My original area of focus was wetlands in the Mississippi Delta south of New Orleans, and I first wanted to compare HUC12 regions in the same HUC8 area. The [Watershed Boundary Dataset](https://www.usgs.gov/national-hydrography/watershed-boundary-dataset) comes from the U.S. Geological Survey and defines eight levels of progressively nested hydrological zones. In the current workflow, I chose one neighboring wetlands area and one urban area, but different locations can be selected. The clustering happens on multi-spectral reflectance data from eight spectral bands from the NASA Harmonized Landsat and Sentinel-2 [dataset](https://www.earthdata.nasa.gov/data/projects/hls). This workflow can be modified to compare different HUC12 areas and run repeatedly hands-free once study areas are defined to calculate optimal clusters and plot clusters next to red/green/blue plots. [Read more about the process here](projects/clustering_portfolio3.html).
 
 ### Modeling Asthma Rates in Chicago with Income and Vegetation Data
 
@@ -16,9 +34,9 @@ I created a workflow to implement the elbow method into k-means modeling. [Read 
   <iframe src="img/descrip_asthma_error_map.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
-For an assignment, I built a multiple linear regression model comparing various vegetation statistics to adult asthma rates by census tract in Chicago, IL. Vegetation data is found using [NAIP](https://naip-usdaonline.hub.arcgis.com/) satellite imagery to find NDVI values and calculate various measures. the [CDC Places](https://www.cdc.gov/places/index.html) dataset has measures on asthma rates at the tract level, and income data I added later comes from the 5-Year American Community Survey from the [Census Bureau](https://www.census.gov/data/developers/data-sets/acs-5year.html). While looking at the satellite imagery of Chicago, the major highway systems really stood out, but I couldn't determine much about the distribution of green spaces yet. I was partially aware from previous work, but [Bagagli](https://www.graduateinstitute.ch/sites/internet/files/2025-02/chicago_0130_lowres.pdf) and [Weiwu](https://economics.ucdavis.edu/sites/g/files/dgvnsk13091/files/inline-files/Weiwu.pdf) have both written about the extent to which the construction of the interstate highway system further deepened racial divides as minority communities were often the ones disrupted and relocated to build the multi-lane roads. [Aaronson et al.](https://pubs.aeaweb.org/doi/pdfplus/10.1257/pol.20190414) among others have written about redlining which has a long history of division in Chicago as well as certain minority communities were denied access to credit and housing. 
+For an assignment, I built a multiple linear regression model comparing various vegetation statistics to adult asthma rates by census tract in Chicago, IL. Vegetation data from [NAIP](https://naip-usdaonline.hub.arcgis.com/) satellite imagery is used to find NDVI values and calculate various measures. The [CDC Places](https://www.cdc.gov/places/index.html) dataset has measures on asthma rates at the tract level, and the income data I added later comes from the 5-Year American Community Survey from the [Census Bureau](https://www.census.gov/data/developers/data-sets/acs-5year.html). While looking at the satellite imagery of Chicago, the major highway systems really stood out, but I couldn't determine much about the distribution of green spaces yet. I was partially aware from previous work, but [Bagagli](https://www.graduateinstitute.ch/sites/internet/files/2025-02/chicago_0130_lowres.pdf) and [Weiwu](https://economics.ucdavis.edu/sites/g/files/dgvnsk13091/files/inline-files/Weiwu.pdf) have both written about the extent to which the construction of the interstate highway system further deepened racial divides as minority communities were often the ones disrupted and relocated to build the multi-lane roads. [Aaronson et al.](https://pubs.aeaweb.org/doi/pdfplus/10.1257/pol.20190414) among others have written about redlining which has a long history of division in Chicago as well as certain minority communities were denied access to credit and housing. 
 
-I hypothesized that these structural inequalities would indicate that the accessibility and quality of greenspace in Chicago is relatively similar to healthcare access and air quality represented by asthma rates. However, when calculating a model using solely vegetation and asthma rates, I found a very weak R<sup>2</sup> value of 0.091. With the addition of median household income data, I was able to bring the R<sup>2</sup> value up to 0.546, which is a substantial improvement. I would like to add a measure of proximity to neighboring green spaces as well, but that has not been implemented yet. [Read more about the process here](projects/greenspace_portfolio.html).
+When calculating a model using solely vegetation and asthma rates, I found a very weak R<sup>2</sup> value of 0.091. With the addition of median household income data, the R<sup>2</sup> value rose to 0.546, which is a substantial improvement. The workflow is structured in a way to allow additional feature variables from different (or the same) datasets, and I would like to add a measure of proximity to neighboring green spaces as well. [Read more about the process here](projects/greenspace_portfolio.html).
 
 
 ### Analyzing Vegetation Levels in the Gila River Indian Community
