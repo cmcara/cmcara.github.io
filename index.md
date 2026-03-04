@@ -4,7 +4,7 @@
 ---
 ### K-Means Optimization in Land Cover Classification
 
-<div style="width: 500px; height: 300px;">
+<div style="width: 520px; height: 300px;">
   <iframe src="img/elbow_output_080902030501.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
@@ -12,7 +12,7 @@
   <iframe src="img/kmeans_output_080902030501.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
-<div style="width: 500px; height: 300px;">
+<div style="width: 520px; height: 300px;">
   <iframe src="img/elbow_output_080902030502.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
