@@ -4,25 +4,25 @@
 ---
 ### K-Means Optimization in Land Cover Classification
 
-<div style="width: 500px; height: 200px;">
+<div style="width: 500px; height: 300px;">
   <iframe src="img/elbow_output_080902030501.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
-<div style="width: 500px; height: 250px;">
+<div style="width: 1000px; height: 500px;">
   <iframe src="img/kmeans_output_080902030501.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
-<div style="width: 500px; height: 200px;">
+<div style="width: 500px; height: 400px;">
   <iframe src="img/elbow_output_080902030502.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
-<div style="width: 500px; height: 250px;">
+<div style="width: 1200px; height: 600px;">
   <iframe src="img/kmeans_output_080902030502.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
 Unsupervised machine learning algorithms have a numer of [use](https://www.sciencedirect.com/science/article/pii/S1877050925012852) [cases](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018EA000519) in earth sciences, though the lack of labelled training data can make inference more difficult. [K-means clustering](https://en.wikipedia.org/wiki/K-means_clustering) applies an algorithm to group data into k different 'clusters' of similar values, but without some testing, the optimal number of clusters can be difficult to determine. The elbow method compares the inetrtia (defined as the sum of squared differences) for each k clusters, but inertia will always decrease with more clusters. By locating the 'elbow' where we start seeing a smaller decrease in inertia as we increase cluters, we can identify the k number of clusters that offers the best tradeoff.
 
-<div style="width: 250px; height: 250px;">
+<div style="width: 500px; height: 500px;">
   <iframe src="img/HUC12_borders.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
