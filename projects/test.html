@@ -1,3 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Coffee Chat Bot Café</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f5efe6;
+color:#3b2f2f;
+}
+
+header{
+background:#4b2e2e;
+color:white;
+padding:30px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+font-size:40px;
+}
+
+header p{
+margin-top:10px;
+font-style:italic;
+}
+
+section{
+padding:40px;
+max-width:900px;
+margin:auto;
+}
+
+.menu{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3{
+margin-top:0;
+}
+
+.chatbot{
+margin-top:40px;
+padding:30px;
+background:#fff7ef;
+border-radius:8px;
+text-align:center;
+}
+
+footer{
+margin-top:40px;
+background:#4b2e2e;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>☕ Coffee Chat Bot Café</h1>
+<p>Your virtual barista — chat, learn, and build the perfect drink.</p>
+</header>
+
+<section>
+
+<h2>About</h2>
+
+<p>
+Welcome to Coffee Chat Bot Café. Our friendly AI barista can help you build the
+perfect drink, recommend something new, or share fun coffee trivia while you wait.
+</p>
+
+</section>
+
+<section>
+
+<h2>Menu Inspiration</h2>
+
+<div class="menu">
+
+<div class="card">
+<h3>Espresso Drinks</h3>
+<ul>
+<li>Latte</li>
+<li>Cappuccino</li>
+<li>Flat White</li>
+<li>Macchiato</li>
+<li>Mocha</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Classic Coffee</h3>
+<ul>
+<li>Drip Coffee</li>
+<li>Cold Brew</li>
+<li>Pour Over</li>
+<li>Americano</li>
+<li>Espresso Shot</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Milk Options</h3>
+<ul>
+<li>Whole</li>
+<li>2%</li>
+<li>Skim</li>
+<li>Oat</li>
+<li>Almond</li>
+<li>Soy</li>
+<li>Coconut</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Customize</h3>
+<ul>
+<li>Hot, Iced, or Blended</li>
+<li>Small / Medium / Large</li>
+<li>Decaf / Half-caf / Extra shot</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<section class="chatbot">
+
+<h2>Talk to Our Virtual Barista</h2>
+
+<p>
+Ask for a recommendation, build a custom drink, or learn a coffee fact.
+</p>
+
 <script>
   window.watsonAssistantChatOptions = {
     integrationID: "8c8aed6a-c816-40bd-9bdd-c84bc9747a3e", // The ID of this integration.
@@ -11,3 +165,17 @@
     document.head.appendChild(t);
   });
 </script>
+
+</section>
+
+<footer>
+
+<p>☕ Coffee Chat Bot Café</p>
+<p>Powered by an AI Barista</p>
+
+</footer>
+
+</body>
+</html>
+
+
