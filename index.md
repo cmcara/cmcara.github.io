@@ -1,5 +1,9 @@
 
 ### Welcome! I am currently working towards my MS in Applied Mathematics at the University of Colorado Boulder, with a focus on statistics and data analytics applications to the physical sciences. Some of the projects I have worked on in Earth Data Analytics are listed below with workflows linked for further detail. ###
+---
+### Habitat Suitability with Fuzzy Logic
+
+
 
 ---
 ### K-Means Optimization in Land Cover Classification
