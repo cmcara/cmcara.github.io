@@ -4,11 +4,11 @@
 ### Whitebark Pine Habitat Suitability with Fuzzy Logic
 
 <div style="width: 1500px; height: 500px;">
-  <iframe src="img/lavo_all_plot.png" style="width: 100%; height: 100%; transform: scale(0.6); transform-origin: 0 0; overflow: auto;border: none;"></iframe>
+  <iframe src="img/lavo_all_plot.png" style="width: 100%; height: 100%; transform: scale(0.3); transform-origin: 0 0; overflow: auto;border: none;"></iframe>
 </div>
 
-<div style="width: 1300px; height: 400px;">
-  <iframe src="img/shasta_all_plot.png" style="width: 100%; height: 100%; transform: scale(0.4); transform-origin: 0 0; overflow: auto;border: none;"></iframe>
+<div style="width: 1500px; height: 300px;">
+  <iframe src="img/shasta_all_plot.png" style="width: 100%; height: 100%; transform: scale(0.3); transform-origin: 0 0; overflow: auto;border: none;"></iframe>
 </div>
 
 Despite being listed as a threatened species by the FWS in [2022](https://www.fws.gov/species/whitebark-pine-pinus-albicaulis), the whitebark pine (*Apinus albicaulis*) is incredibly resilient and serves as a [pioneer species, a keystone species, and a foundation species](https://whitebarkfound.org/about/why-does-whitebark-pine-matter/). Whitebark seeds are almost entirely spread by Clark's nutcrackers, who rip the cones apart and dislodge the seeds, which are then carried by the wind or stashed in one of many nutcracker burrows to be forgotten about for years ([NRCS](https://www.nrcs.usda.gov/plantmaterials/idpmcpg10870.pdf)). White pine blister rust and mountain pine beetles have been major threats to the whitebark pine species leading to the spread of [ghost forests](https://www.conifers.org/pi/Pinus_albicaulis.php) where skeletal tree dot the landscapes, but the hearty pines continue to return and grow old enough to produce cones and continue the cycle.
