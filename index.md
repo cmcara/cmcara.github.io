@@ -3,6 +3,17 @@
 ---
 ### Whitebark Pine Habitat Suitability with Fuzzy Logic
 
+<div style="width: 1200px; height: 400px; overflow: auto; position: relative;">
+  <img src="img/lavo_all_plot.png" 
+       style="width: 100%; height: auto; transform: scale(0.3); transform-origin: 0 0;">
+</div>
+
+<div style="width: 1200px; height: 400px; overflow: auto; position: relative;">
+  <img src="img/shasta_all_plot.png" 
+       style="width: 100%; height: auto; transform: scale(0.3); transform-origin: 0 0;">
+</div>
+
+
 <div style="width: 1500px; height: 500px;">
   <iframe src="img/lavo_all_plot.png" style="width: 100%; height: 100%; transform: scale(0.3); transform-origin: 0 0; overflow: auto;border: none;"></iframe>
 </div>
