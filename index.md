@@ -4,15 +4,8 @@
 ### Whitebark Pine Habitat Suitability with Fuzzy Logic
 
 <div style="width: 1000px; height: 400px; overflow: auto; position: relative;">
-  <img src="img/lavo_all_plot.png" 
-       style="width: 100%; height: auto; transform: scale(0.9); transform-origin: 0 0;">
-</div>
-
----
-
-<div style="width: 1000px; height: 400px; overflow: auto; position: relative;">
   <img src="img/shasta_all_plot.png" 
-       style="width: 100%; height: auto; transform: scale(1); transform-origin: 0 0;">
+       style="width: 100%; height: auto; transform: scale(.9); transform-origin: 0 0;">
 </div>
 
 
@@ -20,6 +13,11 @@
 Despite being listed as a threatened species by the FWS in [2022](https://www.fws.gov/species/whitebark-pine-pinus-albicaulis), the whitebark pine (*Apinus albicaulis*) is incredibly resilient and serves as a [pioneer species, a keystone species, and a foundation species](https://whitebarkfound.org/about/why-does-whitebark-pine-matter/). Whitebark seeds are almost entirely spread by Clark's nutcrackers, who rip the cones apart and dislodge the seeds, which are then carried by the wind or stashed in one of many nutcracker burrows to be forgotten about for years ([NRCS](https://www.nrcs.usda.gov/plantmaterials/idpmcpg10870.pdf)). White pine blister rust and mountain pine beetles have been major threats to the whitebark pine species leading to the spread of [ghost forests](https://www.conifers.org/pi/Pinus_albicaulis.php) where skeletal tree dot the landscapes, but the hearty pines continue to return and grow old enough to produce cones and continue the cycle.
 
 As higher temperatures rise to higher elevations, the whitebark pine is also being crowded out by other species typical of lower elevations and higher shade tolerance, which the whitebark pine does not [possess](https://www.nrcs.usda.gov/plantmaterials/idpmcpg10870.pdf). Mountains in the western U.S. are tall by most standards, but eventually the peak region cannot support consistent soil or plant habitat (particularly for trees) as the slope becomes too sheer and rocky. Despite efforts to manage habitat, invasive threats, and crowding species, is there a chance we could simply lose sufficient space for species like whitebark if temperatures rise significantly in peak areas? To what degree will the height of the peaks make a difference? To begin attempting to answer questions like these, I developed a workflow for a habitat suitability model that incorporates soil (sand, organic material) and topography (elevation, slope, aspect) values for the study sites with climate predictions (max/min temp, precipitation) across a number of models. 
+
+<div style="width: 1000px; height: 400px; overflow: auto; position: relative;">
+  <img src="img/lavo_all_plot.png" 
+       style="width: 100%; height: auto; transform: scale(0.9); transform-origin: 0 0;">
+</div>
 
 For this example, I focused on the mountain peaks in the Lassen and Shasta National Forests in California. Mount Shasta is nearly 4,000 feet taller than Lassen Peak, but both protected areas are key whitebark pine habitats. Across all climate models and sites, I was surprised at the extent to which both peaks saw improved suitability. I expected the higher elevation peaks to be the least impacted but was not anticipating an increase. The MIROC-ESM model was chosen as the 'hottest' of the climate models and clearly stands out as the most negatively impacted across both sites which lines up with expectations, but the peaks still see a positive increase in suitability. One of both of these could result from misalignment in my optimal and tolerance values, which can be easily adjusted from research. Fortunately, both peak regions in Shasta see either a gain or minimal loss, but whitebark pine on the smaller, left peak could be at risk much earlier than the main peak. [Read more about the process here](projects/habitat_suitability_portfolio.pdf).
 
