@@ -5,12 +5,14 @@
 
 <div style="width: 1000px; height: 400px; overflow: auto; position: relative;">
   <img src="img/lavo_all_plot.png" 
-       style="width: 100%; height: auto; transform: scale(0.7); transform-origin: 0 0;">
+       style="width: 100%; height: auto; transform: scale(0.9); transform-origin: 0 0;">
 </div>
+
+---
 
 <div style="width: 1000px; height: 400px; overflow: auto; position: relative;">
   <img src="img/shasta_all_plot.png" 
-       style="width: 100%; height: auto; transform: scale(0.7); transform-origin: 0 0;">
+       style="width: 100%; height: auto; transform: scale(1); transform-origin: 0 0;">
 </div>
 
 
@@ -24,7 +26,7 @@ For this example, I focused on the mountain peaks in the Lassen and Shasta Natio
 ---
 ### K-Means Optimization in Land Cover Classification
 
-<div style="width: 700px; height: 325px;">
+<div style="width: 720px; height: 325px;">
   <iframe src="img/elbow_output_080902030501.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
@@ -32,7 +34,7 @@ For this example, I focused on the mountain peaks in the Lassen and Shasta Natio
   <iframe src="img/kmeans_output_080902030501.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
-<div style="width: 700px; height: 325px;">
+<div style="width: 720px; height: 325px;">
   <iframe src="img/elbow_output_080902030502.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
