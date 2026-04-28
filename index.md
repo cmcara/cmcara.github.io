@@ -1,6 +1,14 @@
 
 ### Welcome! I am currently working towards my MS in Applied Mathematics at the University of Colorado Boulder, with a focus on statistics and data analytics applications to the physical sciences. Some of the projects I have worked on in Earth Data Analytics are listed below with workflows linked for further detail. ###
 ---
+---
+### High Resolution Clustering with NEON LiDAR and Reflectance
+<div style="width: 720px; height: 325px;">
+  <iframe src="img/RMNP_Cluster_Map.html" style="width: 100%; height: 100%; border: none;"></iframe>
+</div>
+
+Using NEON data for the Canopy Height Model, NDVI reflectance, and Digital Terrain Model, I calculated a vegetation structure clustering analysis using K-Means. My project focusses on the heavily forested and mountainous Rocky Mountain National Park but can be modified for any NEON site with sufficient data. I am in the processing of improving the workflow to better suit any the wide range of data products NEON has to offer. Analysis with data at such a high resolution can dramatically improve earth science modelling but presents computation and storage challenges that I work towards reducing here. [Read more about the process here](projects/lidar_clustering.html).
+
 ### Whitebark Pine Habitat Suitability with Fuzzy Logic
 
 <div style="width: 1000px; height: 400px; overflow: auto; position: relative;">
