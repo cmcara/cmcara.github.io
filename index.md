@@ -3,7 +3,7 @@
 ---
 
 ### High Resolution Clustering with NEON LiDAR and Reflectance
-<div style="width: 600px; height: 600px;">
+<div style="width: 700px; height: 650px;">
   <iframe src="img/RMNP_Cluster_Map.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
