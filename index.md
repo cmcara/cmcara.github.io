@@ -8,13 +8,15 @@
   
   <div style="width: 48%; min-width: 400px; height: 400px; overflow: hidden; border: 1px solid #ccc;">
     <iframe src="img/RMNP_Cluster_Tile.html" 
-            style="width: 143%; height: 143%; border: none; transform: scale(0.7); transform-origin: 0 0;">
+            style="width: 142.8%; height: 142.8%; border: none; transform: scale(0.7); transform-origin: 0 0; overflow: hidden;"
+            scrolling="no">
     </iframe>
   </div>
 
   <div style="width: 48%; min-width: 400px; height: 400px; overflow: hidden; border: 1px solid #ccc;">
     <iframe src="img/RMNP_CHM_Tile.html" 
-            style="width: 143%; height: 143%; border: none; transform: scale(0.7); transform-origin: 0 0;">
+            style="width: 142.8%; height: 142.8%; border: none; transform: scale(0.7); transform-origin: 0 0; overflow: hidden;"
+            scrolling="no">
     </iframe>
   </div>
 
