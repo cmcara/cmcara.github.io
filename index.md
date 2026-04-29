@@ -4,14 +4,18 @@
 
 ### High Resolution Clustering with NEON LiDAR and Reflectance
 
-<div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 10px; justify-content: center;">
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 30px; justify-content: center; padding: 20px;">
   
-  <div style="width: 48%; min-width: 300px; height: 500px;">
-    <iframe src="img/RMNP_Zoom_Cluster.html" style="width: 100%; height: 100%; border: none;"></iframe>
+  <div style="width: 48%; min-width: 400px; height: 700px; overflow: hidden; border: 1px solid #ccc; background: #fff;">
+    <iframe src="img/RMNP_Zoom_Tile.html" 
+            style="width: 166.6%; height: 166.6%; border: none; transform: scale(0.6); transform-origin: 0 0;">
+    </iframe>
   </div>
 
-  <div style="width: 48%; min-width: 300px; height: 500px;">
-    <iframe src="img/RMNP_CHM_Tile_Map.html" style="width: 100%; height: 100%; border: none;"></iframe>
+  <div style="width: 48%; min-width: 400px; height: 700px; overflow: hidden; border: 1px solid #ccc; background: #fff;">
+    <iframe src="img/RMNP_CHM_Tile.html" 
+            style="width: 166.6%; height: 166.6%; border: none; transform: scale(0.6); transform-origin: 0 0;">
+    </iframe>
   </div>
 
 </div>
