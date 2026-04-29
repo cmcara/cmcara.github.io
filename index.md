@@ -83,8 +83,8 @@ For this example, I focused on the mountain peaks in the Lassen and Shasta Natio
 Unsupervised machine learning algorithms have a numer of [use](https://www.sciencedirect.com/science/article/pii/S1877050925012852) [cases](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018EA000519) in earth sciences, though the lack of labelled training data can make inference more difficult. [K-means clustering](https://en.wikipedia.org/wiki/K-means_clustering) applies an algorithm to group data into k different 'clusters' of similar values, but without some testing, the optimal number of clusters can be difficult to determine. The elbow method compares the inetrtia (defined as the sum of squared differences) for each k clusters, but inertia will always decrease with more clusters. By locating the 'elbow' where we start seeing a smaller decrease in inertia as we increase cluters, we can identify the k number of clusters that offers the best tradeoff.
 
 <div style="width: 600px; height: 615px;">
-  <iframe src="img/HUC12_borders.html" style="width: 100%; height: 100%; border: none;
-    scrolling="no""></iframe>
+  <iframe src="img/HUC12_borders.html" style="width: 100%; height: 100%; border: none;"
+    scrolling="no"></iframe>
 </div>
 
 My original area of focus was wetlands in the Mississippi Delta south of New Orleans, and I first wanted to compare HUC12 regions in the same HUC8 area. The [Watershed Boundary Dataset](https://www.usgs.gov/national-hydrography/watershed-boundary-dataset) comes from the U.S. Geological Survey and defines eight levels of progressively nested hydrological zones. In the current workflow, I chose one neighboring wetlands area and one urban area, but different locations can be selected. The clustering happens on multi-spectral reflectance data from eight spectral bands from the NASA Harmonized Landsat and Sentinel-2 [dataset](https://www.earthdata.nasa.gov/data/projects/hls). This workflow can be modified to compare different HUC12 areas and run repeatedly hands-free once study areas are defined to calculate optimal clusters and plot clusters next to red/green/blue plots. [Read more about the process here](projects/clustering_portfolio3.html).
@@ -135,7 +135,7 @@ Next I ran the DiD analysis, which should identify what, if any, effect the 2004
 
 I have not solved how to fully mask out human development and isolate as much 'pure' vegetation as possible, but I have expanded on the last project as a step in that direction. I modified the NDVI sliding plot to now calculate a running average of NDVI values from 2005 to the year selected as compared to mean values for 2002-2004. Calculating a running average helps smooth out the data more and really highlight areas where NDVI has been consistently changing in the same direction. 
 
-<div style="width: 630px; height: 505px;">
+<div style="width: 660px; height: 505px;">
   <iframe src="img/gric_avg_diff_plot.html" style="width: 100%; height: 100%; border: none;"
     scrolling="no"></iframe>
 </div>
