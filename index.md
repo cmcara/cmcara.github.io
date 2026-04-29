@@ -23,7 +23,7 @@
 <div style="display: flex; flex-direction: row; justify-content: center; gap: 5px; width: 100%;">
   
   <div style="flex: 1; height: 80vh; overflow: hidden; border: 1px solid #ccc;">
-    <iframe src="img/RMNP_Zoom_Tile.html" 
+    <iframe src="img/RMNP_Clsuter_Tile.html" 
             style="width: 166.6%; height: 166.6%; border: none; transform: scale(0.6); transform-origin: 0 0;">
     </iframe>
   </div>
