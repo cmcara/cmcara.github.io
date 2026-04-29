@@ -7,7 +7,7 @@
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 10px; justify-content: center; padding: 10px;">
   
   <div style="width: 48%; min-width: 400px; height: 700px; overflow: hidden; border: 1px solid #ccc; background: #fff;">
-    <iframe src="img/RMNP_Zoom_Tile.html" 
+    <iframe src="img/RMNP_Cluster_Tile.html" 
             style="width: 166.6%; height: 166.6%; border: none; transform: scale(0.6); transform-origin: 0 0;">
     </iframe>
   </div>
