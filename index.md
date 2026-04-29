@@ -4,7 +4,7 @@
 
 ### High Resolution Clustering with NEON LiDAR and Reflectance
 
-<div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 30px; justify-content: center; padding: 20px;">
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 10px; justify-content: center; padding: 10px;">
   
   <div style="width: 48%; min-width: 400px; height: 700px; overflow: hidden; border: 1px solid #ccc; background: #fff;">
     <iframe src="img/RMNP_Zoom_Tile.html" 
