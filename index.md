@@ -6,22 +6,21 @@
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 10px; justify-content: center;">
   
-  <div style="width: 48%; min-width: 400px; height: 400px; overflow: hidden; border: 1px solid #ccc;">
+  <div style="width: 48%; min-width: 400px; height: 380px; overflow: hidden; border: 1px solid #ccc; border-radius: 4px;">
     <iframe src="img/RMNP_Cluster_Tile.html" 
-            style="width: 142.8%; height: 142.8%; border: none; transform: scale(0.7); transform-origin: 0 0; overflow: hidden;"
+            style="width: 133.33%; height: 133.33%; border: none; transform: scale(0.75); transform-origin: 0 0;"
             scrolling="no">
     </iframe>
   </div>
 
-  <div style="width: 48%; min-width: 400px; height: 400px; overflow: hidden; border: 1px solid #ccc;">
+  <div style="width: 48%; min-width: 400px; height: 380px; overflow: hidden; border: 1px solid #ccc; border-radius: 4px;">
     <iframe src="img/RMNP_CHM_Tile.html" 
-            style="width: 142.8%; height: 142.8%; border: none; transform: scale(0.7); transform-origin: 0 0; overflow: hidden;"
+            style="width: 133.33%; height: 133.33%; border: none; transform: scale(0.75); transform-origin: 0 0;"
             scrolling="no">
     </iframe>
   </div>
 
 </div>
-
 
 
 The [National Ecological Observatory Network](https://www.neonscience.org/) as part of the NSF collects truly massive amounts of data including biological, atmospheric, hydrologic and geographic measurements and observations. This information is collected at incredibly high resolution through specialized equipment and, although data is limited to NEON observation sites, can provide insights at a much more granular level if it can be processed properly. This workflow is particularly concerned with LiDAR and multi-spectral reflectance data, both of which are collected and published as raw data and derived products. To save on complexity and storage demands, I utilize NEON-calculated data for the Canopy Height Model and the Normalized Difference Vegetation Index (a measure of vegetation health) and calculate slope and aspect (slope direction) from the Digital Terrain Model elevation data. My initial work focusses on the heavily forested and mountainous Rocky Mountain National Park but can be modified for any NEON site with sufficient data, and I am in the processing of improving the workflow to better suit the wide range of data products NEON has to offer. Workflows for downloading and processing different datasets are similar but have individual quirks to watch out for.
