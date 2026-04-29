@@ -20,6 +20,22 @@
 
 </div>
 
+<div style="display: flex; flex-direction: row; justify-content: center; gap: 5px; width: 100%;">
+  
+  <div style="flex: 1; height: 80vh; overflow: hidden; border: 1px solid #ccc;">
+    <iframe src="img/RMNP_Zoom_Tile.html" 
+            style="width: 166.6%; height: 166.6%; border: none; transform: scale(0.6); transform-origin: 0 0;">
+    </iframe>
+  </div>
+
+  <div style="flex: 1; height: 80vh; overflow: hidden; border: 1px solid #ccc;">
+    <iframe src="img/RMNP_CHM_Tile.html" 
+            style="width: 166.6%; height: 166.6%; border: none; transform: scale(0.6); transform-origin: 0 0;">
+    </iframe>
+  </div>
+
+</div>
+
 
 The [National Ecological Observatory Network](https://www.neonscience.org/) as part of the NSF collects truly massive amounts of data including biological, atmospheric, hydrologic and geographic measurements and observations. This information is collected at incredibly high resolution through specialized equipment and, although data is limited to NEON observation sites, can provide insights at a much more granular level if it can be processed properly. This workflow is particularly concerned with LiDAR and multi-spectral reflectance data, both of which are collected and published as raw data and derived products. To save on complexity and storage demands, I utilize NEON-calculated data for the Canopy Height Model and the Normalized Difference Vegetation Index (a measure of vegetation health) and calculate slope and aspect (slope direction) from the Digital Terrain Model elevation data. My initial work focusses on the heavily forested and mountainous Rocky Mountain National Park but can be modified for any NEON site with sufficient data, and I am in the processing of improving the workflow to better suit the wide range of data products NEON has to offer. Workflows for downloading and processing different datasets are similar but have individual quirks to watch out for.
 
