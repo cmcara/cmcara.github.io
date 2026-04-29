@@ -6,14 +6,14 @@
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 10px; justify-content: center;">
   
-  <div style="width: 48%; min-width: 400px; height: 380px; overflow: hidden; border: 1px solid #ccc; border-radius: 4px;">
+  <div style="width: 48%; min-width: 400px; height: 380px; overflow: hidden; border: none;">
     <iframe src="img/RMNP_Cluster_Tile.html" 
             style="width: 133.33%; height: 133.33%; border: none; transform: scale(0.75); transform-origin: 0 0;"
             scrolling="no">
     </iframe>
   </div>
 
-  <div style="width: 48%; min-width: 400px; height: 380px; overflow: hidden; border: 1px solid #ccc; border-radius: 4px;">
+  <div style="width: 48%; min-width: 400px; height: 380px; overflow: hidden; border: none;">
     <iframe src="img/RMNP_CHM_Tile.html" 
             style="width: 133.33%; height: 133.33%; border: none; transform: scale(0.75); transform-origin: 0 0;"
             scrolling="no">
@@ -25,14 +25,16 @@
 
 The [National Ecological Observatory Network](https://www.neonscience.org/) as part of the NSF collects truly massive amounts of data including biological, atmospheric, hydrologic and geographic measurements and observations. This information is collected at incredibly high resolution through specialized equipment and, although data is limited to NEON observation sites, can provide insights at a much more granular level if it can be processed properly. This workflow is particularly concerned with LiDAR and multi-spectral reflectance data, both of which are collected and published as raw data and derived products. To save on complexity and storage demands, I utilize NEON-calculated data for the Canopy Height Model and the Normalized Difference Vegetation Index (a measure of vegetation health) and calculate slope and aspect (slope direction) from the Digital Terrain Model elevation data. My initial work focusses on the heavily forested and mountainous Rocky Mountain National Park but can be modified for any NEON site with sufficient data, and I am in the processing of improving the workflow to better suit the wide range of data products NEON has to offer. Workflows for downloading and processing different datasets are similar but have individual quirks to watch out for.
 
-<div style="width: 800px; height: 250px;">
-  <iframe src="img/RMNP_Cluster_Table.html" style="width: 100%; height: 100%; border: none;"></iframe>
+<div style="width: 850px; height: 250px;">
+  <iframe src="img/RMNP_Cluster_Table.html" style="width: 100%; height: 100%; border: none;"
+    scrolling="no"></iframe>
 </div>
 
 With data for NDVI, CHM, slope, northness, eastness, and elevation collected and merged across the RMNP site, I began harmonizing and scaling the data for analysis. Re-sizing the data to mean of zero and standard deviation of one is crucial with data of such vastly different scales. From a basic multiple linear regression with NDVI as the response, tree height represented as the CHM unsurprisingly was most positively correlated with vegetation health for a given pixel in the RMNP. With an R2 of .212, the overall regression is not very strong, but hints at one of the more interesting takeaways from this analysis: northness is positively correlated with NDVI. Given the northern hemisphere location, I figured southern facing slopes would receive more sunlight and thus be healthier, but the data will repeatedly suggest northern facing trees to be healthier in terms of NDVI. According to the [USGS](https://www.usgs.gov/geology-and-ecology-of-national-parks/ecology-rocky-mountain-national-park), "north-facing slopes are not subject to the same strong, drying sunlight as the south-facing slopes and therefore, the north’s soils contain more available water." Grasses and plant are more likely to flourish on south-facing slopes as well, while competition from other species might be less fierce on the shaded slopes that provide refuge for trees tall enough to still receive enough sun. As the data also suggested substantial structural issues with an OLS regression model and not wanting to implement a more advanced generalized linear model, I decided to move towards classification clustering instead.
 
-<div style="width: 800px; height: 675px;">
-  <iframe src="img/RMNP_Cluster_Map.html" style="width: 100%; height: 100%; border: none;"></iframe>
+<div style="width: 850px; height: 650px;">
+  <iframe src="img/RMNP_Cluster_Map.html" style="width: 100%; height: 100%; border: none;"
+    scrolling="no"></iframe>
 </div>
 
 Classification is one the primary [use cases](https://learn.microsoft.com/en-us/dotnet/machine-learning/resources/tasks) for machine learning algorithms. Unsupervised learning allows the implementation of these advanced strategies without labelled or training data but comes with potential weaknesses, particularly in inference. In a previous k-means project detailed below, comparing the clustering of two different regions is difficult as the algorithm likely found different arrangements of centroids in the data and sorted clusters slightly differently. By calculating and outputting centroid means in a similar way after the algorithm has done its job, I can much better understand the groupings. A key difference for this workflow was the implementation of a batch-processing k-means algorithm and chunking throughout which was necessary given the final scaled pre-processing data had 181,562,988 x 8 entries. Including the cluster means for each variable adds a lot of context to the plot and allows for a peak behind the curtain of the algorithm to see where groups stand out. For my earlier regression, I scaled all of the feature variables but left NDVI unscaled to make inference easier. When first calculating clusters, I accidentally left NDVI unscaled which downplayed its grouping effect the first few times. After catching the mistake, rearranging the groupings to descending NDVI order, plotting from green to red, and increasing the algorithm hyper-parameters, the plot really begins to take shape. The cluster map above is at a low resolution for web-viewing but the full plot in code picks out individual plants and structures including roads and rivers. The tile version provides an example of the increased resolution without plotting the full area. [Read more about the process here](projects/RMNP_lidar_clustering.html).
