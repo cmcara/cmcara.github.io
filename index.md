@@ -91,7 +91,7 @@ My original area of focus was wetlands in the Mississippi Delta south of New Orl
 
 ### Modeling Asthma Rates in Chicago with Income and Vegetation Data
 
-<div style="width: 1000px; height: 750px;">
+<div style="width: 1000px; height: 720px;">
   <iframe src="img/comp_plot.html" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
