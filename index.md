@@ -2,6 +2,50 @@
 ### Welcome! I am currently working towards my MS in Applied Mathematics at the University of Colorado Boulder, with a focus on statistics and data analytics applications to the physical sciences. Some of the projects I have worked on in Earth Data Analytics are listed below with workflows linked for further detail. ###
 ---
 
+### Tuning Automated Ghost Reflectance Processing for Indoor Mobile LiDAR
+
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  
+  <div style="width: 48%; min-width: 400px; height: 380px; overflow: hidden; border: none;">
+    <iframe src="img/downplot.html" 
+            style="width: 133.33%; height: 133.33%; border: none; transform: scale(0.75); transform-origin: 0 0;"
+            scrolling="no">
+    </iframe>
+  </div>
+  
+Indoor LiDAR scanning uses advanced laser and sensor technology to create highly accurate ‘digital twins’ of built environments from point clouds captured as reflectance data. Mobile scanning leverages Self Localization and Mapping (SLAM) algorithms to capture data continuously via backpack mounted sensors which is often combined with panorama photos at regular intervals and more traditional static scanners on tripods to develop maps, models, and virtual walkthroughs. These digital twins can be incredibly helpful for major hospitality and infrastructure developments as designers, engineers, and architects can view the location in high resolution without travelling on-site. Unfortunately, turning captured data into actionable models requires a number of occasionally tedious and manual processing steps to clean up the point cloud data.
+
+Mirrors (and reflective windows) become a ‘portal’ through otherwise impenetrable walls. Instead of reflecting from the mirror back to the scanner, the laser maintains its ‘trajectory’ and bounces off into the room where it finally bounces off a physical surface as expected and reflects back through the mirror to our scanner. Since the scanner is only concerned with the angle of release and time until the laser returns, the direction change is not recognized, and the scanner ‘thinks’ it saw something through the mirror. This shows up very clearly in the data above on the left and right sides of the main bedroom. Occasionally, a surface will be far enough away from the scanner or non-reflective enough that the scanner does not pick up any data, which can largely be addressed by scanning closer to the missing surface, but moving closer to a mirror only increases the ghost reflections. 
+
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  
+  <div style="width: 48%; min-width: 400px; height: 380px; overflow: hidden; border: none;">
+    <iframe src="img/planestraj.html" 
+            style="width: 133.33%; height: 133.33%; border: none; transform: scale(0.75); transform-origin: 0 0;"
+            scrolling="no">
+    </iframe>
+  </div>
+  
+Current workflows require manually manipulating and clipping each scan to clean bad bata, which can seriously compound over multiple floors and properties. This workflow takes a lightweight approach to automating the clipping process by reading in .e57 files, identifying where the true wall planes are, and filtering points on the other side of walls from the scanner trajectory. 
+
+I first down sample the point cloud to voxels to help with initial visualization and classification before implementing Random Sampling Consensus (RANSAC) to identify the major planes as walls or floors. Principal Component Analysis (PCA) helps analyze each plane independently in 2D and classify gaps as either doors or gaps to be filled in (windows, mirrors, etc.). Improving the door detection algorithm through further testing or machine learning classification would likely improve the output overall but is a future endeavor. Ray tracing occlusion between the measured points the shortest distance to the trajectory line connecting all of the photograph locations at the voxel level gives a rough estimate for ghost points. Losing resolution defeats the purpose of using LiDAR in the first place, so the next step translates the ‘ghost’ classification from the voxel level to the full point cloud using K-Dimensional Trees. A weakness to the current logic occurs when I have long hallways where the scanner collects data on either side of the wall but only travels down one side. This ‘tricks’ the workflow into thinking real data was captured through a wall. This is happening in the plot above where the closest point on the scanner trajectory to the far hallway is actually in the bedroom, which necessitates capturing through a wall. Dropping walls sufficiently far from the scanner trajectory helps alleviate this in other clouds but is less for this particular example. Static scanners have fixed origin points tied to each measurement which should alleviate this specific issue, but I have not built out static functionality yet. 
+
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  
+  <div style="width: 48%; min-width: 400px; height: 380px; overflow: hidden; border: none;">
+    <iframe src="img/classviz.html" 
+            style="width: 133.33%; height: 133.33%; border: none; transform: scale(0.75); transform-origin: 0 0;"
+            scrolling="no">
+    </iframe>
+  </div>
+
+At the full point cloud resolution though, I can take advantage of the intensity measurement for each point and overrule my initial estimation to keep all points above a certain intensity. This helps keep more of the real points without sacrificing true ghost point identification, particularly in the long hallways above. Throughout the process are a number of parameters that effect performance and need to be tweaked for different clouds and environments, which I am currently in the process of testing. Read more and try it here!
+
+
+
+<img width="468" height="639" alt="image" src="https://github.com/user-attachments/assets/0be29e5e-2ddd-47b7-815c-353cfd889bfc" />
+
+
 ### High Resolution Clustering with NEON LiDAR and Reflectance
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 10px; justify-content: center;">
